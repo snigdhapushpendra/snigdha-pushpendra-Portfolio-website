@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #05b4ff;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section {
+    padding: 160px 15% 120px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('portfolio\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: var(--big-font);
+    margin-top: 10px;
+}
+
+.web-developer {
+    font-size: var(--h2-font);
+    margin-top: 10px;
+    color: var(--main-color);
+}
+
+.intro {
+    font-size: var(--p-font);
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.about {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 60px 15%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 60px 15%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background: var(--bg-color);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.resume {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 60px 15%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.resume-content {
+    font-size: var(--p-font);
+}
+
+.resume-content h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.resume-content ul {
+    margin-top: 10px;
+}
+
+.resume-content ul li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 60px 15%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 22px 5%;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        background: var(--bg-color);
+        border-radius: 5px;
+    }
+
+    .navlist a {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #menu-icon.active + .navlist {
+        display: flex;
+    }
+
+    section {
+        padding: 120px 5% 100px;
+    }
+
+    .home {
+        background-position: top;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .web-developer {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
