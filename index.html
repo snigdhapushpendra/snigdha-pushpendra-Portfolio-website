@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snigdha Pushpendra Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">web Develo<span>pe</span>r..</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide"></div>
+           </div>
+        <h1>Snigdha Pushpendra</h1>
+        <h1 class="web-developer">Web <span>Developer.</span></h1>
+        <p class="intro">Hi, I’m Snigdha Pushpendra, a passionate and detail-oriented web developer who has recently graduated with a degree in Computer Science. I thrive on turning ideas into dynamic web applications and am eager to bring my fresh perspective and enthusiasm to the industry. Throughout my studies, I have developed a solid foundation in HTML, CSS, JavaScript, and various frameworks, and I am continuously expanding my skill set to include the latest technologies.</p>
+        <div class="button">
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a web developer with a keen interest in creating innovative and efficient web solutions. With a background in Computer Science, I have developed a strong understanding of various web technologies and frameworks. My goal is to continually improve my skills and contribute to exciting web projects.</p>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="to do list img.png" alt="Project 1">
+                <h3>TO-DO-List</h3>
+                <p>Developed with HTML,CSS and Javascript, this project offers an intuitive solution  for efficent task managment.</p>
+            </div>
+            <div class="project-item">
+                <img src="plates.png" alt="Project 2">
+                <h3>Food website landing page</h3>
+                <p>The food website landing page project aims to create an inviting and user-friendly online presence for "Delicious Eats," showcasing a variety of culinary offerings. Utilizing HTML, CSS, and JavaScript, the page features a responsive design that adapts seamlessly across devices.</p>
+
+            </div>
+            <div class="project-item">
+                <img src="the biryani grill. png.png" alt="Project 3">
+                <h3>resturant website</h3>
+                <p>A restaurant website built with HTML, CSS, and JavaScript aims to showcase the restaurant's offerings and atmosphere. HTML defines the structure, CSS styles it with colors and layouts that reflect the restaurant's brand, and JavaScript adds interactive elements like menus, galleries, and reservation forms.</p>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <p>Download my resume <a href="resume.pdf.pdf" class="btn" target="_blank">here</a>.</p>
+            <h3>Experience</h3>
+            <ul>
+                <li><strong>Intern at Tech Octanet Services Pvt Ltd.</strong> - Web Developer (2024-Present)</li>
+                <li><strong>Workshop by CETPA</strong> - Data Analytics and Visualization (Certificate)</li>
+                <li><strong>IBM Workshop</strong> - Data Science (Certificate)</li>
+            </ul>
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Degree in Computer Science</strong> - IIMT COLLEGE OF ENGINEERING GREATER NOIDA</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Bootstrap, Java</li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:snigdhasinha73679@gmail.com">snigdhasinha73679@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/snigdha-pushpendra-00a238220" target="_blank">LinkedIn</a>.</p>
+    </section>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navlist = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navlist.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
